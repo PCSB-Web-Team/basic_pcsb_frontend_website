@@ -123,6 +123,30 @@ body {
   object-fit: cover;
   height: 100%;
 }
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  .slideshow .slide .slide-content .caption .title{
+    font-size: 60px;
+    padding-top: 38%;
+  }
+  .slideshow .slide .slide-content .caption .text{
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  .slideshow .slide .slide-content .caption .title{
+    font-size: 25px;
+    padding-top: 30%;
+  }
+  .slideshow .slide .slide-content .caption .text{
+    font-size: 10px;
+  }
+}
+
+
 @media screen and (max-width: 400px)
 {
   #header
